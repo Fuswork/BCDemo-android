@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BCDemo</string>
-    <string name="tab1">tab1</string>>
-    <string name="tab2">tab2</string>>
-    <string name="tab3">tab3</string>>
-    <string name="tab4">tab4</string>>
+    <string name="tab1">区块</string>>
+    <string name="tab2">效益</string>>
+    <string name="tab3">系统</string>>
+    <string name="tab4">我</string>>
 </resources>

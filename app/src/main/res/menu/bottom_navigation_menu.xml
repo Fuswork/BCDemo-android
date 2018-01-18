@@ -4,25 +4,25 @@
     <item
         android:id="@+id/tab1"
         android:checked="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_action_terrain"
         android:title="@string/tab1"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/tab2"
         android:checked="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_action_timeline"
         android:title="@string/tab2"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/tab3"
         android:checked="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_action_track_changes"
         android:title="@string/tab3"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/tab4"
         android:checked="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_action_person_outline"
         android:title="@string/tab4"
         app:showAsAction="ifRoom"/>
 </menu>
