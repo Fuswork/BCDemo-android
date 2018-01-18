@@ -5,7 +5,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.fuswork.bcdemo.adapter.BottomNavigationViewHelper;
@@ -19,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
     private ViewPager viewPager;
 
     //fragments
-    Page1Fragment page1Fragment;
-    Page2Fragment page2Fragment;
-    Page3Fragment page3Fragment;
-    Page4Fragment page4Fragment;
+    private Page1Fragment page1Fragment;
+    private Page2Fragment page2Fragment;
+    private Page3Fragment page3Fragment;
+    private Page4Fragment page4Fragment;
     private int mCurrentItem = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,43 +59,42 @@ public class MainActivity extends AppCompatActivity {
         });
 
         setupViewPager(viewPager);
-
     }
 
     private void initData(){
-        bottomNavigationView.setOnNavigationItemReselectedListener(
-                new BottomNavigationView.OnNavigationItemReselectedListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
-                    public void onNavigationItemReselected(@NonNull MenuItem item) {
-                        switch (item.getItemId()){
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
                             case R.id.tab1:
-                                if(mCurrentItem != 0){
+                                if (mCurrentItem != 0) {
                                     viewPager.setCurrentItem(0);
                                     mCurrentItem = 0;
                                 }
                                 break;
                             case R.id.tab2:
-                                if(mCurrentItem != 1){
+                                if (mCurrentItem != 1) {
                                     viewPager.setCurrentItem(1);
                                     mCurrentItem = 1;
                                 }
                                 break;
                             case R.id.tab3:
-                                if(mCurrentItem != 2){
+                                if (mCurrentItem != 2) {
                                     viewPager.setCurrentItem(2);
                                     mCurrentItem = 2;
                                 }
                                 break;
                             case R.id.tab4:
-                                if(mCurrentItem != 3){
+                                if (mCurrentItem != 3) {
                                     viewPager.setCurrentItem(3);
                                     mCurrentItem = 3;
                                 }
                                 break;
                         }
+                        return false;
                     }
-                }
-        );
+                });
     }
 
     private void setupViewPager(ViewPager viewPager) {
