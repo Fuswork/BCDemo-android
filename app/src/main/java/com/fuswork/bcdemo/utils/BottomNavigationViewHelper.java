@@ -1,4 +1,4 @@
-package com.fuswork.bcdemo.adapter;
+package com.fuswork.bcdemo.utils;
 
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;
@@ -8,7 +8,7 @@ import android.util.Log;
 import java.lang.reflect.Field;
 
 /**
- * Created by dgf000011 on 2018/1/17.
+ * Created by denggaofeng on 2018/1/17.
  */
 
 public class BottomNavigationViewHelper {

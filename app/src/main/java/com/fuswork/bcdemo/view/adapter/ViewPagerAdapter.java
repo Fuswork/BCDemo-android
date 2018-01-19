@@ -1,4 +1,4 @@
-package com.fuswork.bcdemo.adapter;
+package com.fuswork.bcdemo.view.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dgf000011 on 2018/1/17.
+ * Created by denggaofeng on 2018/1/17.
  */
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {

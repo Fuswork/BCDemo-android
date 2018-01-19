@@ -1,4 +1,4 @@
-package com.fuswork.bcdemo;
+package com.fuswork.bcdemo.view.activity;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
@@ -7,8 +7,9 @@ import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
-import com.fuswork.bcdemo.adapter.BottomNavigationViewHelper;
-import com.fuswork.bcdemo.adapter.ViewPagerAdapter;
+import com.fuswork.bcdemo.R;
+import com.fuswork.bcdemo.utils.BottomNavigationViewHelper;
+import com.fuswork.bcdemo.view.adapter.ViewPagerAdapter;
 import com.fuswork.bcdemo.view.Fragment.*;
 
 public class MainActivity extends AppCompatActivity {
